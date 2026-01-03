@@ -1,0 +1,25 @@
+package com.rays.java.io;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class CopyValidEmail {
+	public static void main(String[] args) {
+		FileReader source = new FileReader("D://IO//Email.txt");
+		FileWriter target = new FileWriter("D://IO//ValidEmailTest.txt");
+		
+		BufferedReader br = new BufferedReader(source);
+		BufferedWriter bw = new BufferedWriter(target);
+		
+		String email;
+		
+		while((email = br.readLine()) != null)
+		{
+			if(email.endsWith()) != null;
+		}
+		
+	}
+	
+
+}

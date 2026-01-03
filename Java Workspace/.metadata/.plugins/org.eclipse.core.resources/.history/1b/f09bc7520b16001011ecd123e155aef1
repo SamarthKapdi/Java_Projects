@@ -1,0 +1,11 @@
+package com.rays.oop.methodoverriding;
+
+public class TestConnstructor {
+	
+	public static void main(String[] args) {
+		
+		Sum s1 = new Sum();
+		Sum s2 = new Sum(4, 2);
+	}
+	
+}

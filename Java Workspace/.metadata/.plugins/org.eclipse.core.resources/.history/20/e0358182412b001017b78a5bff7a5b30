@@ -1,0 +1,6 @@
+package com.rays.java.io;
+
+public class rwbinary {
+	String source = "f:/baby.jpg";
+
+}

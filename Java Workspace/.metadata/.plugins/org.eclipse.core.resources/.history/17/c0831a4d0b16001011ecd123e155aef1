@@ -1,0 +1,10 @@
+package com.rays.oop.methodoverriding;
+
+public class Sum {
+	 {
+		// TODO Auto-generated method stub
+		 System.out.println("this is default constructor");
+	}
+	 public Sum(int a, int b)
+
+}

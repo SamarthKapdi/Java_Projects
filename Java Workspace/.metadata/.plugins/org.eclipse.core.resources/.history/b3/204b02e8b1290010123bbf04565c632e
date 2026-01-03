@@ -1,0 +1,10 @@
+package com.rays.java.io;
+import java.io.BufferedReader;
+
+public class CopyValidEmail {
+	public static void main(String[] args) {
+		
+	}
+	
+
+}

@@ -1,0 +1,49 @@
+package com.rays.exercise.javabasics;
+public class SortComparison {
+    public static void selectionSort(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            int minIdx = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[minIdx]) {
+                    minIdx = j;
+                }
+            }
+            int temp = arr[minIdx];
+            arr[minIdx] = arr[i];
+            arr[i] = temp;
+        }
+    }
+
+    public static void insertionSort(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            int key = arr[i];
+            int j = i - 1;
+            while (j >= 0 && arr[j] > key) {
+                arr[j + 1] = arr[j];
+                j--;
+            }
+            arr[j + 1] = key;
+        }
+    }
+
+    public static void main(String[] args) {
+        int size = 10000;
+        int[] arr1 = new int[size];
+        int[] arr2 = new int[size];
+        for (int i = 0; i < size; i++) {
+            int val = (int) (Math.random() * size);
+            arr1[i] = val;
+            arr2[i] = val;
+        }
+
+        long start = System.nanoTime();
+        selectionSort(arr1);
+        long end = System.nanoTime();
+        System.out.println("Selection sort time (ms): " + (end - start) / 1_000_000.0);
+
+        start = System.nanoTime();
+        insertionSort(arr2);
+        end = System.nanoTime();
+        System.out.println("Insertion sort time (ms): " + (end - start) / 1_000_000.0);
+    }
+}

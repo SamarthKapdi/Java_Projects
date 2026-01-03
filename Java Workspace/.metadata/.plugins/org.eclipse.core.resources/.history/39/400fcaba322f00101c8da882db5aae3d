@@ -1,0 +1,20 @@
+package com.rays.threads;
+
+public class HelloRunable implements Runnable {
+
+	
+	String name;
+	
+	public HelloRunable() {
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+
+}

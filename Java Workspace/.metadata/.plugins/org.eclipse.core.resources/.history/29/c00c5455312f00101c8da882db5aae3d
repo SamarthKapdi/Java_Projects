@@ -1,0 +1,13 @@
+package com.rays.threads;
+
+public class HelloThread extends Thread { //predefined
+
+	String name;
+	
+	public HelloThread(String name) {
+		 this.name = null;
+	}
+	
+	
+	
+}
